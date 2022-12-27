@@ -1,0 +1,10 @@
+Model
+- hidden_size: 1024
+- xavier uniform initialization of Linear layer
+
+Optimizer
+- lr: 1e-4
+- weight_decay: 1e-5
+
+Training
+- epochs: 200

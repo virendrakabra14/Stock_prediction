@@ -1,0 +1,6 @@
+Model
+- hidden_size: 512
+- xavier uniform initialization of Linear layer
+
+Optimizer
+- lr: 1e-5
