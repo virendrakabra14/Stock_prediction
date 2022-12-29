@@ -1,0 +1,14 @@
+batch_size = 1024
+
+model_args = {
+    'input_size': 1,
+    'output_size': out_days,
+    'hidden_size': 128,
+    'num_layers': 1,
+    'sequence_length': num_X_cols,       # = in_days
+}
+model = StockLSTM(**model_args)
+optim_args = {
+    'lr': 1e-4
+}
+optimizer = torch.optim.RMSprop(model.parameters(), **optim_args)
